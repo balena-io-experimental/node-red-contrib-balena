@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('device',{
         category: 'resin',
-        color: '#E9B306',
+        color: '#F3F3F3',
         defaults: {
             name: {value:"device state"}
         },
         inputs:1,
         outputs:1,
-        icon: "device.svg",
+        icon: "resin.svg",
         label: function() {
             return this.name||"device-state";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="device">
-    <p>Gets the device state from resin-supervisor</p>
+    <p>Gets the device state from resin-supervisor. Returns the device state object</p>
 </script>

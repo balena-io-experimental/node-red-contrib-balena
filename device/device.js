@@ -9,7 +9,7 @@ module.exports = function(RED) {
                 if (!error && response.statusCode == 200) {
                     body = JSON.parse(body);
                     msg = {
-                        payload: body.status
+                        payload: body
                     };
                     node.send(msg);
                 } else {

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('blink',{
+        category: 'resin',
+        color: '#F3F3F3',
+        defaults: {
+            name: {value:"blink LED"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "resin.svg",
+        label: function() {
+            return this.name||"blink-led";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="blink">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="blink">
+    <p>Blink the onboard LED via resin-supervisor</p>
+</script>

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ping',{
+        category: 'resin',
+        color: '#F3F3F3',
+        defaults: {
+            name: {value:"ping supervisor"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "resin.svg",
+        label: function() {
+            return this.name||"ping-supervisor";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ping">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ping">
+    <p>Pings resin-supervisor. Returns OK or KO string as payload</p>
+</script>
