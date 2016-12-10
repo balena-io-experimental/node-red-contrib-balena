@@ -1,0 +1,23 @@
+{
+  "name": "node-red-contrib-resinio",
+  "version": "0.0.1",
+  "description": "A set of nodes to interact with resin.io supervisor from node-red",
+  "repository": "https://github.com/resin-io-playground/node-red-contrib-resinio",
+  "dependencies": {
+    "request": "^2.79.0"
+  },
+  "author": "Carlo Maria Curinga <carlo@resin.io>",
+  "licence": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "resin",
+    "io",
+    "supervisor",
+    "device"
+  ],
+  "node-red": {
+    "nodes": {
+      "device": "device/device.js"
+    }
+  }
+}
