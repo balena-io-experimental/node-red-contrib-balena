@@ -1,22 +1,19 @@
 var request = require('request');
 var msg;
 module.exports = function(RED) {
-    function getDeviceState(config) {
+    function blinkLed(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.on('input', function(msg) {
-            request(process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/device?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY, function(error, response, body) {
-                if (!error && response.statusCode == 200) {
-                    body = JSON.parse(body);
-                    msg = {
-                        payload: body.status
-                    };
-                    node.send(msg);
-                } else {
-                  node.error("An error occurred: "+ error);
-                }
+            request.post({
+                url: process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/blink?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY
+            }, function(err, httpResponse, body) {
+                msg = {
+                    payload: response.statusCode
+                };
+                node.send(msg);
             });
         });
     }
-    RED.nodes.registerType("device", getDeviceState);
+    RED.nodes.registerType("blink", blinkLed);
 };

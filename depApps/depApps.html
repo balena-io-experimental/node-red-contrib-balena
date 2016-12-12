@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('depApps',{
+        category: 'resin',
+        color: '#C0C0C0',
+        defaults: {
+            name: {value:"dependent apps list"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "resin.svg",
+        label: function() {
+            return this.name||"dependent-apps";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="depApps">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="depApps">
+    <p>Gets the list of dependent applications from resin-supervisor</p>
+</script>

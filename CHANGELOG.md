@@ -8,3 +8,7 @@
 * changed nodes color and icon
 * fixed a bug where Supervisor device endpoint node would return only `state`
 * Supervisor ping endpoint node
+
+## 0.0.3
+* ping node now returns HTTP Response code
+* Supervisor blink endpoint node

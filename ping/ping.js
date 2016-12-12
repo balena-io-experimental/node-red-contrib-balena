@@ -6,17 +6,10 @@ module.exports = function(RED) {
         var node = this;
         this.on('input', function(msg) {
             request(process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/ping?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY, function(error, response, body) {
-                if (!error && response.statusCode == 200) {
-                    msg = {
-                        payload: "OK"
-                    };
-                    node.send(msg);
-                } else {
-                  msg = {
-                      payload: "KO"
-                  };
-                  node.send(msg);
-                }
+                msg = {
+                    payload: response.statusCode
+                };
+                node.send(msg);
             });
         });
     }
