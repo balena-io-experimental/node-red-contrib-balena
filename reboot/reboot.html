@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('reboot',{
+        category: 'resin',
+        color: '#EB6E6E',
+        defaults: {
+            name: {value:"purge data partition"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "resin.svg",
+        label: function() {
+            return this.name||"reboot";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="reboot">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="reboot">
+    <p>Reboots the device via resin-supervisor.</p>
+</script>

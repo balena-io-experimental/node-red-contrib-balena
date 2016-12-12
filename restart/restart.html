@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('restart',{
+        category: 'resin',
+        color: '#F3F3F3',
+        defaults: {
+            name: {value:"restart container"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "resin.svg",
+        label: function() {
+            return this.name||"restart";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="restart">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="restart">
+    <p>Restarts the user container via resin-supervisor.</p>
+</script>

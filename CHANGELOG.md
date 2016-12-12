@@ -12,3 +12,9 @@
 ## 0.0.3
 * ping node now returns HTTP Response code
 * Supervisor blink endpoint node
+
+## 0.0.4
+* restart supervisor endpoint node
+* purge supervisor endpoint node
+* reboot supervisor endpoint node
+* shutdown supervisor endpoint node

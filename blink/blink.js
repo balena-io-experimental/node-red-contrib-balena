@@ -7,7 +7,10 @@ module.exports = function(RED) {
         this.on('input', function(msg) {
             request.post({
                 url: process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/blink?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY
-            }, function(err, httpResponse, body) {
+            }, function(error, httpResponse, body) {
+                if (error) {
+                    return node.error("An error occurred: " + error);
+                }
                 msg = {
                     payload: response.statusCode
                 };

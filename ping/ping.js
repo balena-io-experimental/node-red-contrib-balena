@@ -6,6 +6,9 @@ module.exports = function(RED) {
         var node = this;
         this.on('input', function(msg) {
             request(process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/ping?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY, function(error, response, body) {
+                if (error) {
+                    return node.error("An error occurred: " + error);
+                }
                 msg = {
                     payload: response.statusCode
                 };
