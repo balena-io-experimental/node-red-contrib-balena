@@ -40,3 +40,9 @@
 ## 0.1.3
 
 * minor fixes (labels typos)
+
+## 0.1.4
+
+* updates lock supervisor endpoint node
+* updates unlock supervisor endpoint node
+* updates apply (lock override) supervisor endpoint node

@@ -1,26 +1,26 @@
 <script type="text/javascript">
-    RED.nodes.registerType('shutdown',{
+    RED.nodes.registerType('lock',{
         category: 'resin',
-        color: '#EB6E6E',
+        color: '#F3F3F3',
         defaults: {
-            name: {value:"shutdown device"}
+            name: {value:"lock updates"}
         },
         inputs:1,
         outputs:1,
         icon: "resin.svg",
         label: function() {
-            return this.name||"shutdown";
+            return this.name||"lock-updates";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="shutdown">
+<script type="text/x-red" data-template-name="lock">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="shutdown">
-    <p>Shuts down the device via resin-supervisor.</p>
+<script type="text/x-red" data-help-name="lock">
+    <p>Locks updates preventing resin-supervisor from stopping the user container.</p>
 </script>
