@@ -1,5 +1,5 @@
 var request = require('request');
-var lockFile = require('lockFile');
+var lockFile = require('lockfile');
 var msg;
 module.exports = function(RED) {
     function lockUpdates(config) {

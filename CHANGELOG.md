@@ -46,3 +46,7 @@
 * updates lock supervisor endpoint node
 * updates unlock supervisor endpoint node
 * updates apply (lock override) supervisor endpoint node
+
+## 0.1.5
+
+* fixed a dependency declaration typo for lock/unlock nodes
