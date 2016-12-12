@@ -7,7 +7,7 @@ module.exports = function(RED) {
         this.on('input', function(msg) {
             request.post({
                 url: process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/reboot?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY
-            }, function(error, httpResponse, body) {
+            }, function(error, response, body) {
                 if (!error && response.statusCode == 204) {
                     body = JSON.parse(body);
                     msg = {

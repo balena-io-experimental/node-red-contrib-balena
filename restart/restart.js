@@ -10,7 +10,7 @@ module.exports = function(RED) {
                 form: {
                     appId: process.env.RESIN_APP_ID
                 }
-            }, function(error, httpResponse, body) {
+            }, function(error, response, body) {
                 if (error) {
                     return node.error("An error occurred: " + error);
                 }

@@ -28,3 +28,7 @@
   * [reboot](https://docs.resin.io/runtime/supervisor-api/#post-v1-reboot)
   * [shutdown](https://docs.resin.io/runtime/supervisor-api/#post-v1-shutdown)
   * [purge](https://docs.resin.io/runtime/supervisor-api/#post-v1-purge)
+
+## 0.1.1
+
+* fixed an issue in the httpResponse handler for some of the nodes
