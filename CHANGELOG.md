@@ -18,3 +18,13 @@
 * purge supervisor endpoint node
 * reboot supervisor endpoint node
 * shutdown supervisor endpoint node
+
+## 0.1.0
+* first set of supervisor nodes release
+  * [blink](https://docs.resin.io/runtime/supervisor-api/#post-v1-blink)
+  * [ping](https://docs.resin.io/runtime/supervisor-api/#get-ping)
+  * [device](https://docs.resin.io/runtime/supervisor-api/#get-v1-device)
+  * [restart](https://docs.resin.io/runtime/supervisor-api/#post-v1-restart)
+  * [reboot](https://docs.resin.io/runtime/supervisor-api/#post-v1-reboot)
+  * [shutdown](https://docs.resin.io/runtime/supervisor-api/#post-v1-shutdown)
+  * [purge](https://docs.resin.io/runtime/supervisor-api/#post-v1-purge)

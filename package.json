@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-resinio",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A set of nodes to interact with resin.io supervisor from node-red",
   "repository": "https://github.com/resin-io-playground/node-red-contrib-resinio",
   "dependencies": {
@@ -20,6 +20,10 @@
       "blink": "blink/blink.js",
       "device": "device/device.js",
       "ping": "ping/ping.js",
+      "restart": "restart/restart.js",
+      "reboot": "reboot/reboot.js",
+      "shutdown": "shutdown/shutdown.js",
+      "purge": "purge/purge.js",
       "depDevices": "depDevices/depDevices.js",
       "depApps": "depApps/depApps.js"
     }
