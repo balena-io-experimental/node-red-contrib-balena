@@ -5,7 +5,7 @@ module.exports = function(RED) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.on('input', function(msg) {
-            request(process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/ping?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY, function(error, response, body) {
+            request(process.env.RESIN_SUPERVISOR_ADDRESS + '/ping?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY, function(error, response, body) {
                 if (error) {
                     return node.error("An error occurred: " + error);
                 }

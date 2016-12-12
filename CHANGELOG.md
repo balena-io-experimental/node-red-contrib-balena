@@ -32,3 +32,7 @@
 ## 0.1.1
 
 * fixed an issue in the httpResponse handler for some of the nodes
+
+## 0.1.2
+
+* fixed an issue with ping node trying to use API version prefix (not supported from supervisor)
