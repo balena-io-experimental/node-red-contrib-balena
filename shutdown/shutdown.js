@@ -20,5 +20,5 @@ module.exports = function(RED) {
             });
         });
     }
-    RED.nodes.registerType("reboot", shutdownDevice);
+    RED.nodes.registerType("shutdown", shutdownDevice);
 };

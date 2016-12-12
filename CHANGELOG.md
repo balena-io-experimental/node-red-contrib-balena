@@ -36,3 +36,7 @@
 ## 0.1.2
 
 * fixed an issue with ping node trying to use API version prefix (not supported from supervisor)
+
+## 0.1.3
+
+* minor fixes (labels typos)
