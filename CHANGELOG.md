@@ -50,3 +50,7 @@
 ## 0.1.5
 
 * fixed a dependency declaration typo for lock/unlock nodes
+
+## 0.1.6
+
+* make better use of colors in palettes
