@@ -54,3 +54,7 @@
 ## 0.1.6
 
 * make better use of colors in palettes
+
+## 0.1.7
+
+* fixed a bug that would make the shutdown node behave like a reboot one.
