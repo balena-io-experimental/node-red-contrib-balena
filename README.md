@@ -1,6 +1,8 @@
 # node-red-contrib-resinio
 A set of nodes to interact with resin.io supervisor from node-red
 
+![resin nodes](https://raw.githubusercontent.com/resin-io-playground/node-red-contrib-resinio/master/docs-assets/node-red-contrib-resinio-palette.png)
+
 ## License
 
 Copyright 2016 Resinio Ltd.
