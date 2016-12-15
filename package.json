@@ -2,7 +2,7 @@
   "name": "node-red-contrib-resinio",
   "version": "0.1.8",
   "description": "A set of nodes to interact with resin.io supervisor from node-red",
-  "repository": "https://github.com/resin-io-playground/node-red-contrib-resinio",
+  "repository": "https://github.com/resin-io-projects/node-red-contrib-resinio",
   "dependencies": {
     "lockfile": "^1.0.3",
     "request": "^2.79.0"
