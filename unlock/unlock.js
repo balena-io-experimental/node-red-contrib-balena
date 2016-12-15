@@ -8,7 +8,12 @@ module.exports = function(RED) {
         this.on('input', function(msg) {
           lockFile.unlock('/data/resin-updates.lock', function(error) {
             if (error) {
-              return node.error("An error occurred: " + error);
+              node.error("An error occurred: " + error);
+              msg = {
+                  payload: false
+              };
+              node.send(msg);
+              return;
             }
             msg = {
                 payload: "updates unlocked"
