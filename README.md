@@ -61,21 +61,21 @@ A wrapper for resin-supervisor [data purge endpoint](https://docs.resin.io/runti
 Returns a JSON object
 
 ### Lock
-![lock](https://raw.githubusercontent.com/resin-io-projects/node-red-contrib-resinio/master/docs-assets/blink-node.png)
+![lock](https://raw.githubusercontent.com/resin-io-projects/node-red-contrib-resinio/master/docs-assets/lock-node.png)
 
 sets the update lockfile, more info [here](https://github.com/resin-io/resin-supervisor/blob/master/docs/update-locking.md)
 
 returns `true` when the action completes, throws an error and returns `false` when the action fails
 
 ### Unlock
-![unlock](https://raw.githubusercontent.com/resin-io-projects/node-red-contrib-resinio/master/docs-assets/blink-node.png)
+![unlock](https://raw.githubusercontent.com/resin-io-projects/node-red-contrib-resinio/master/docs-assets/unlock-node.png)
 
 removes the update lockfile, more info [here](https://github.com/resin-io/resin-supervisor/blob/master/docs/update-locking.md)
 
 returns `true` when the action completes, throws an error and returns `false` when the action fails
 
 ### Update
-![update](https://raw.githubusercontent.com/resin-io-projects/node-red-contrib-resinio/master/docs-assets/blink-node.png)
+![update](https://raw.githubusercontent.com/resin-io-projects/node-red-contrib-resinio/master/docs-assets/update-node.png)
 
 A wrapper for resin-supervisor [update endpoint](https://docs.resin.io/runtime/supervisor-api/#post-v1-update) with [lock override](https://github.com/resin-io/resin-supervisor/blob/master/docs/update-locking.md#overriding-the-lock)
 
