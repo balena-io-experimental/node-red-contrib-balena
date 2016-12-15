@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8
+
+* lock and unlock nodes now return a boolean ACK
+* add proper documentation
+
 ## 0.1.7
 
 * fixed a bug that would make the shutdown node behave like a reboot one.
