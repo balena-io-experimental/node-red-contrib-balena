@@ -1,5 +1,7 @@
 # node-red-contrib-resinio
-A set of nodes that allow to interact with [resin.io supervisor](https://docs.resin.io/runtime/supervisor-api/) from Node-RED
+A set of nodes that allow to interact with [resin.io supervisor](https://docs.resin.io/runtime/supervisor-api/) from [Node-RED on resin](https://github.com/resin-io-playground/resin-node-red)
+
+**this set of nodes works only on resin.io applications, check [resin-node-red](https://github.com/resin-io-playground/resin-node-red) for deploying Node-RED on resin.io**
 
 # Installation
 
