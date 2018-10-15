@@ -1,5 +1,5 @@
 # node-red-contrib-balena
-A set of nodes that allow to interact with [balena supervisor](https://docs.balena.io/runtime/supervisor-api/) from [Node-RED on balena](https://github.com/balena-projects/balena-node-red)
+A set of nodes that allow to interact with [balena supervisor](https://balena.io/docs/reference/supervisor/supervisor-api/) from [Node-RED on balena](https://github.com/balena-projects/balena-node-red)
 
 **this set of nodes works only on balena applications, check [balena-node-red](https://github.com/balena-projects/balena-node-red) for deploying Node-RED on balena**
 
@@ -14,75 +14,75 @@ npm i node-red-contrib-balena -g
 ### Blink
 ![blink](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/blink-node.png)
 
-A wrapper for balena-supervisor [blink endpoint](https://docs.balena.io/runtime/supervisor-api/#post-v1-blink)
+A wrapper for balena-supervisor [blink endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-blink)
 
 Returns the HTTP Status Code
 
 ### Ping
 ![ping](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/ping-node.png)
 
-A wrapper for balena-supervisor [ping endpoint](https://docs.balena.io/runtime/supervisor-api/#get-ping)
+A wrapper for balena-supervisor [ping endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#get-ping)
 
 Returns the HTTP Status Code
 
 ### Device
 ![device](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/device-node.png)
 
-A wrapper for balena-supervisor [device state endpoint](https://docs.balena.io/runtime/supervisor-api/#get-v1-device)
+A wrapper for balena-supervisor [device state endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#get-v1-device)
 
 Returns a device state JSON object
 
 ### Restart
 ![restart](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/restart-node.png)
 
-A wrapper for balena-supervisor [container restart endpoint](https://docs.balena.io/runtime/supervisor-api/#post-v1-restart)
+A wrapper for balena-supervisor [container restart endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-restart)
 
 Returns the HTTP Status Code
 
 ### Reboot
 ![reboot](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/reboot-node.png)
 
-A wrapper for balena-supervisor [reboot endpoint](https://docs.balena.io/runtime/supervisor-api/#post-v1-reboot)
+A wrapper for balena-supervisor [reboot endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-reboot)
 
 Returns the HTTP Status Code
 
 ### Shutdown
 ![shutdown](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/shutdown-node.png)
 
-A wrapper for balena-supervisor [shutdown endpoint](https://docs.balena.io/runtime/supervisor-api/#post-v1-shutdown)
+A wrapper for balena-supervisor [shutdown endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-shutdown)
 
 Returns the HTTP Status Code
 
 ### Purge
 ![purge](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/purge-node.png)
 
-A wrapper for balena-supervisor [data purge endpoint](https://docs.balena.io/runtime/supervisor-api/#post-v1-purge)
+A wrapper for balena-supervisor [data purge endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-purge)
 
 Returns a JSON object
 
 ### Lock
 ![lock](https://raw.githubusercontent.com/balena-projects/node-red-contrib-balena/master/docs-assets/lock-node.png)
 
-sets the update lockfile, more info [here](https://github.com/resin-io/resin-supervisor/blob/master/docs/update-locking.md)
+sets the update lockfile, more info [here](https://github.com/resin-io/balena-supervisor/blob/master/docs/update-locking.md)
 
 returns `true` when the action completes, throws an error and returns `false` when the action fails
 
 ### Unlock
 ![unlock](https://raw.githubusercontent.com/-projects/node-red-contrib-balena/master/docs-assets/unlock-node.png)
 
-removes the update lockfile, more info [here](https://github.com/resin-io/resin-supervisor/blob/master/docs/update-locking.md)
+removes the update lockfile, more info [here](https://github.com/resin-io/balena-supervisor/blob/master/docs/update-locking.md)
 
 returns `true` when the action completes, throws an error and returns `false` when the action fails
 
 ### Update
 ![update](https://raw.githubusercontent.com/-projects/node-red-contrib-balena/master/docs-assets/update-node.png)
 
-A wrapper for balena-supervisor [update endpoint](https://docs.balena.io/runtime/supervisor-api/#post-v1-update) with [lock override](https://github.com/resin-io/balena-supervisor/blob/master/docs/update-locking.md#overriding-the-lock)
+A wrapper for balena-supervisor [update endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-update) with [lock override](https://github.com/resin-io/balena-supervisor/blob/master/docs/update-locking.md#overriding-the-lock)
 
 Returns the HTTP Status Code
 
 # Changelog
-please see [CHANGELOG.md](https://github.com/-projects/node-red-contrib-balena/blob/master/CHANGELOG.md)
+please see [CHANGELOG.md](https://github.com/balena-projects/node-red-contrib-balena/blob/master/CHANGELOG.md)
 
 ## License
 
