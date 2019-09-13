@@ -31,9 +31,7 @@
       "purge": "purge/purge.js",
       "lock": "lock/lock.js",
       "unlock": "unlock/unlock.js",
-      "update": "update/update.js",
-      "depDevices": "depDevices/depDevices.js",
-      "depApps": "depApps/depApps.js"
+      "update": "update/update.js"
     }
   }
 }
