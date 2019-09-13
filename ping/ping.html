@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('ping',{
-        category: 'resin',
+        category: 'balena',
         color: '#F3F3F3',
         defaults: {
             name: {value:"ping supervisor"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"ping-supervisor";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="ping">
-    <p>Pings resin-supervisor. Returns OK or KO string as payload</p>
+    <p>Pings balena-supervisor. Returns OK or KO string as payload</p>
 </script>

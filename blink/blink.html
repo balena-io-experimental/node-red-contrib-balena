@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('blink',{
-        category: 'resin',
+        category: 'balena',
         color: '#F3F3F3',
         defaults: {
             name: {value:"blink LED"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"blink-led";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="blink">
-    <p>Blink the onboard LED via resin-supervisor</p>
+    <p>Blink the onboard LED via balena-supervisor</p>
 </script>

@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('lock',{
-        category: 'resin',
+        category: 'balena',
         color: '#7CCDFD',
         defaults: {
             name: {value:"lock updates"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"lock-updates";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="lock">
-    <p>Locks updates preventing resin-supervisor from stopping the user container.</p>
+    <p>Locks updates preventing balena-supervisor from stopping the user container.</p>
 </script>

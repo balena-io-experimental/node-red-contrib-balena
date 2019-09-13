@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('purge',{
-        category: 'resin',
+        category: 'balena',
         color: '#EB6E6E',
         defaults: {
             name: {value:"purge data partition"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"purge-data";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="purge">
-    <p>Purges the Data partition via resin-supervisor.</p>
+    <p>Purges the Data partition via balena-supervisor.</p>
 </script>

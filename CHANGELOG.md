@@ -1,4 +1,7 @@
-# Changelog
+# Change Log
+
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.1.8
 
@@ -37,13 +40,13 @@
 
 ## 0.1.0
 * first set of supervisor nodes release
-  * [blink](https://docs.resin.io/runtime/supervisor-api/#post-v1-blink)
-  * [ping](https://docs.resin.io/runtime/supervisor-api/#get-ping)
-  * [device](https://docs.resin.io/runtime/supervisor-api/#get-v1-device)
-  * [restart](https://docs.resin.io/runtime/supervisor-api/#post-v1-restart)
-  * [reboot](https://docs.resin.io/runtime/supervisor-api/#post-v1-reboot)
-  * [shutdown](https://docs.resin.io/runtime/supervisor-api/#post-v1-shutdown)
-  * [purge](https://docs.resin.io/runtime/supervisor-api/#post-v1-purge)
+  * [blink](https://docs.balena.io/runtime/supervisor-api/#post-v1-blink)
+  * [ping](https://docs.balena.io/runtime/supervisor-api/#get-ping)
+  * [device](https://docs.balena.io/runtime/supervisor-api/#get-v1-device)
+  * [restart](https://docs.balena.io/runtime/supervisor-api/#post-v1-restart)
+  * [reboot](https://docs.balena.io/runtime/supervisor-api/#post-v1-reboot)
+  * [shutdown](https://docs.balena.io/runtime/supervisor-api/#post-v1-shutdown)
+  * [purge](https://docs.balena.io/runtime/supervisor-api/#post-v1-purge)
 
 ## 0.0.4
 * restart supervisor endpoint node
