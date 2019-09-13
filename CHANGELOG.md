@@ -5,6 +5,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.1.8
 
+## 1.0.1 - 2019-09-13
+
+* Removed deprecated experimental depApp and depDevice nodes [curcuz]
+* Make it clear that the restart node restarts whole app [curcuz]
+* Make container restart a warning-level node [curcuz]
+* Update nodes pic for doc [curcuz]
+
 ## 1.0.0 - 2019-09-13
 
 * Update nodes pic for doc [curcuz]
