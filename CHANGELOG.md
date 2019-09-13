@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.1.8
 
+## 1.0.0 - 2019-09-13
+
+* Fix typo on app id env var handling [curcuz]
+* Add changelog preamble [Giovanni Garufi]
+* Update balena namespace and icons [curcuz]
+
 * lock and unlock nodes now return a boolean ACK
 * add proper documentation
 
