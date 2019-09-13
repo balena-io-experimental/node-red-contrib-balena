@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('update',{
-        category: 'resin',
+        category: 'balena',
         color: '#7CCDFD',
         defaults: {
             name: {value:"update device"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"update";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="update">
-    <p>Updates the user container via resin-supervisor. If updates are locked this will override the lock.</p>
+    <p>Updates the user container via balena-supervisor. If updates are locked this will override the lock.</p>
 </script>

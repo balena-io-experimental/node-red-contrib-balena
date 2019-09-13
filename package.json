@@ -1,21 +1,25 @@
 {
-  "name": "node-red-contrib-resinio",
+  "name": "node-red-contrib-balena",
   "version": "0.1.8",
-  "description": "A set of nodes to interact with resin.io supervisor from node-red",
-  "repository": "https://github.com/resin-io-projects/node-red-contrib-resinio",
+  "description": "A set of nodes to interact with balena.io supervisor from node-red",
+  "repository": "https://github.com/balena-io-projects/node-red-contrib-balena",
   "dependencies": {
-    "lockfile": "^1.0.3",
-    "request": "^2.79.0"
+    "lockfile": "^1.0.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
   },
-  "author": "Carlo Maria Curinga <carlo@resin.io>",
+  "author": "Carlo Maria Curinga <carlo@balena.io>",
   "licence": "Apache-2.0",
   "keywords": [
     "node-red",
-    "resin",
+    "balena",
     "io",
     "supervisor",
     "device"
   ],
+  "jshintConfig": {
+    "esversion": 8
+  },
   "node-red": {
     "nodes": {
       "blink": "blink/blink.js",
