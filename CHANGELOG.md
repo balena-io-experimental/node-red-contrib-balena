@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.0.0 - 2019-09-13
 
+* Update nodes pic for doc [curcuz]
 * Fix typo on app id env var handling [curcuz]
 * Add changelog preamble [Giovanni Garufi]
 * Update balena namespace and icons [curcuz]
