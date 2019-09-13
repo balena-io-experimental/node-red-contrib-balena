@@ -11,71 +11,63 @@ npm i node-red-contrib-balena -g
 
 # Nodes
 
+![nodes](docs-assets/nodes.png)
+
 ### Blink
-![blink](docs-assets/blink-node.png)
 
 A wrapper for balena-supervisor [blink endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-blink)
 
 Returns the HTTP Status Code
 
 ### Ping
-![ping](docs-assets/ping-node.png)
 
 A wrapper for balena-supervisor [ping endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#get-ping)
 
 Returns the HTTP Status Code
 
 ### Device
-![device](docs-assets/device-node.png)
 
 A wrapper for balena-supervisor [device state endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#get-v1-device)
 
 Returns a device state JSON object
 
 ### Restart
-![restart](docs-assets/restart-node.png)
 
 A wrapper for balena-supervisor [container restart endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-restart)
 
 Returns the HTTP Status Code
 
 ### Reboot
-![reboot](docs-assets/reboot-node.png)
 
 A wrapper for balena-supervisor [reboot endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-reboot)
 
 Returns the HTTP Status Code
 
 ### Shutdown
-![shutdown](docs-assets/shutdown-node.png)
 
 A wrapper for balena-supervisor [shutdown endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-shutdown)
 
 Returns the HTTP Status Code
 
 ### Purge
-![purge](docs-assets/purge-node.png)
 
 A wrapper for balena-supervisor [data purge endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-purge)
 
 Returns a JSON object
 
 ### Lock
-![lock](docs-assets/lock-node.png)
 
 sets the update lockfile, more info [here](https://github.com/balena-io/balena-supervisor/blob/master/docs/update-locking.md)
 
 returns `true` when the action completes, throws an error and returns `false` when the action fails
 
 ### Unlock
-![unlock](docs-assets/unlock-node.png)
 
 removes the update lockfile, more info [here](https://github.com/balena-io/balena-supervisor/blob/master/docs/update-locking.md)
 
 returns `true` when the action completes, throws an error and returns `false` when the action fails
 
 ### Update
-![update](docs-assets/update-node.png)
 
 A wrapper for balena-supervisor [update endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-update) with [lock override](https://github.com/balena-io/balena-supervisor/blob/master/docs/update-locking.md#overriding-the-lock)
 
