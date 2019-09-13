@@ -8,7 +8,7 @@ module.exports = function(RED) {
             request.post({
                 url: process.env.BALENA_SUPERVISOR_ADDRESS + '/v1/restart?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY,
                 form: {
-                    appId: process.env.balena_APP_ID
+                    appId: process.env.BALENA_APP_ID
                 }
             }, function(error, response, body) {
                 if (error) {
