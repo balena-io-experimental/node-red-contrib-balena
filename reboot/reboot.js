@@ -6,7 +6,7 @@ module.exports = function(RED) {
         var node = this;
         this.on('input', function(msg) {
             request.post({
-                url: process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/reboot?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY
+                url: process.env.BALENA_SUPERVISOR_ADDRESS + '/v1/reboot?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY
             }, function(error, response, body) {
                 if (!error && response.statusCode == 204) {
                     body = JSON.parse(body);

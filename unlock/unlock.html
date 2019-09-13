@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('unlock',{
-        category: 'resin',
+        category: 'balena',
         color: '#7CCDFD',
         defaults: {
             name: {value:"unlock updates"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"unlock-updates";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="unlock">
-    <p>Unlocks updates allowing resin-supervisor to stop the user container.</p>
+    <p>Unlocks updates allowing balena-supervisor to stop the user container.</p>
 </script>

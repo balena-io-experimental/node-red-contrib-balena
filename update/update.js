@@ -6,7 +6,7 @@ module.exports = function(RED) {
         var node = this;
         this.on('input', function(msg) {
             request.post({
-                url: process.env.RESIN_SUPERVISOR_ADDRESS + '/v1/update?apikey=' + process.env.RESIN_SUPERVISOR_API_KEY,
+                url: process.env.BALENA_SUPERVISOR_ADDRESS + '/v1/update?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY,
                 form: {
                     force: true
                 }

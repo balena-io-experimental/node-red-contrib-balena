@@ -1,13 +1,13 @@
 <script type="text/javascript">
     RED.nodes.registerType('shutdown',{
-        category: 'resin',
+        category: 'balena',
         color: '#EB6E6E',
         defaults: {
             name: {value:"shutdown device"}
         },
         inputs:1,
         outputs:1,
-        icon: "resin.svg",
+        icon: "balena.svg",
         label: function() {
             return this.name||"shutdown";
         }
@@ -22,5 +22,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="shutdown">
-    <p>Shuts down the device via resin-supervisor.</p>
+    <p>Shuts down the device via balena-supervisor.</p>
 </script>
