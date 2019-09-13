@@ -3,7 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.1.8
+## 1.0.1 - 2019-09-13
+
+* Removed deprecated experimental depApp and depDevice nodes [curcuz]
+* Make it clear that the restart node restarts whole app [curcuz]
+* Make container restart a warning-level node [curcuz]
+* Update nodes pic for doc [curcuz]
 
 ## 1.0.0 - 2019-09-13
 
@@ -11,6 +16,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Fix typo on app id env var handling [curcuz]
 * Add changelog preamble [Giovanni Garufi]
 * Update balena namespace and icons [curcuz]
+
+## 0.1.8
 
 * lock and unlock nodes now return a boolean ACK
 * add proper documentation
