@@ -23,6 +23,7 @@
   "node-red": {
     "nodes": {
       "blink": "blink/blink.js",
+      "status": "status/status.js",
       "device": "device/device.js",
       "ping": "ping/ping.js",
       "restart": "restart/restart.js",

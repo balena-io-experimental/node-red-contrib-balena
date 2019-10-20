@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('status',{
+        category: 'balena',
+        color: '#F3F3F3',
+        defaults: {
+            name: {value:"status"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "balena.svg",
+        label: function() {
+            return this.name||"status";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="status">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="status">
+    <p>Gets the status from balena-supervisor. Returns the status object</p>
+</script>
