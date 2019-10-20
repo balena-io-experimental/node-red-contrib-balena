@@ -18,5 +18,5 @@ module.exports = function(RED) {
             });
         });
     }
-    RED.nodes.registerType("state servicdes", getStateServices);
+    RED.nodes.registerType("state services", getStateServices);
 };
