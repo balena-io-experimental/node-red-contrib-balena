@@ -31,6 +31,30 @@ A wrapper for balena-supervisor [device state endpoint](https://balena.io/docs/r
 
 Returns a device state JSON object
 
+### State Services
+
+A wrapper for balena-supervisor [state/status](https://www.balena.io/docs/reference/supervisor/supervisor-api/#get-v2statestatus)
+
+Returns a JSON object describing the state.
+
+### Start Service
+
+A wrapper for balena-supervisor [start a service](https://www.balena.io/docs/reference/supervisor/supervisor-api/#start-a-service-post-v2applicationsappidstart-service)
+
+Returns "OK"
+
+### Stop Service
+
+A wrapper for balena-supervisor [stop a service](https://www.balena.io/docs/reference/supervisor/supervisor-api/#stop-a-service-post-v2applicationsappidstop-service)
+
+Returns "OK"
+
+### Restart Service
+
+A wrapper for balena-supervisor [restart a service](https://www.balena.io/docs/reference/supervisor/supervisor-api/#restart-a-service-post-v2applicationsappidrestart-service)
+
+Returns "OK"
+
 ### Restart
 
 A wrapper for balena-supervisor [container restart endpoint](https://balena.io/docs/reference/supervisor/supervisor-api/#post-v1-restart)
