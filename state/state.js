@@ -1,11 +1,11 @@
 var request = require('request');
 var msg;
 module.exports = function(RED) {
-    function getStatus(config) {
+    function getState(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.on('input', function(msg) {
-            request(process.env.BALENA_SUPERVISOR_ADDRESS + '/v1/device?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY, function(error, response, body) {
+            request(process.env.BALENA_SUPERVISOR_ADDRESS + '/v2/state/status?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY, function(error, response, body) {
                 if (!error && response.statusCode == 200) {
                     body = JSON.parse(body);
                     msg = {
@@ -18,5 +18,5 @@ module.exports = function(RED) {
             });
         });
     }
-    RED.nodes.registerType("status", getStatus);
+    RED.nodes.registerType("state", getState);
 };
