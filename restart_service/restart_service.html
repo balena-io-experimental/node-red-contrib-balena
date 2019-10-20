@@ -1,26 +1,26 @@
 <script type="text/javascript">
-    RED.nodes.registerType('state',{
+    RED.nodes.registerType('restart service',{
         category: 'balena',
         color: '#F3F3F3',
         defaults: {
-            name: {value:"state"}
+            name: {value:"restart service"}
         },
         inputs:1,
         outputs:1,
         icon: "balena.svg",
         label: function() {
-            return this.name||"state";
+            return this.name||"restart service";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="state">
+<script type="text/x-red" data-template-name="restart service>
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="state">
-    <p>Gets the state from balena-supervisor. Returns the state object</p>
+<script type="text/x-red" data-help-name="restart service">
+    <p>Restarts the service with name specified by the payload of the incoming message. Returns "OK" when service is restarted.</p>
 </script>

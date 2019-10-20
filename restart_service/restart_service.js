@@ -1,13 +1,14 @@
 var request = require('request');
 var msg;
 module.exports = function(RED) {
-    function stopService(config) {
+    function restartService(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.on('input', function(msg) {
+
             request(
                { 
-                   uri: process.env.BALENA_SUPERVISOR_ADDRESS + '/v2/applications/'  + process.env.BALENA_APP_ID + '/stop-service?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY,
+                   uri: process.env.BALENA_SUPERVISOR_ADDRESS + '/v2/applications/'  + process.env.BALENA_APP_ID + '/restart-service?apikey=' + process.env.BALENA_SUPERVISOR_API_KEY,
                    method: 'POST',
                    json : {
                        "serviceName" : msg.payload
@@ -26,5 +27,5 @@ module.exports = function(RED) {
             });
         });
     }
-    RED.nodes.registerType("stop service", stopService);
+    RED.nodes.registerType("restart service", restartService);
 };

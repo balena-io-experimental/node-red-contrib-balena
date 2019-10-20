@@ -1,7 +1,7 @@
 var request = require('request');
 var msg;
 module.exports = function(RED) {
-    function getState(config) {
+    function getStateServices(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.on('input', function(msg) {
@@ -18,5 +18,5 @@ module.exports = function(RED) {
             });
         });
     }
-    RED.nodes.registerType("state", getState);
+    RED.nodes.registerType("state servicdes", getStateServices);
 };

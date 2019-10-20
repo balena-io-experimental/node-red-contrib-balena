@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('state services',{
+        category: 'balena',
+        color: '#F3F3F3',
+        defaults: {
+            name: {value:"state services"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "balena.svg",
+        label: function() {
+            return this.name||"state services";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="state services">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="state services">
+    <p>Gets the state of all the services from balena-supervisor. Returns the state object</p>
+</script>
