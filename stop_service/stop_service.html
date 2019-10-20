@@ -1,26 +1,26 @@
 <script type="text/javascript">
-    RED.nodes.registerType('stop',{
+    RED.nodes.registerType('stop_service',{
         category: 'balena',
         color: '#F3F3F3',
         defaults: {
-            name: {value:"stop"}
+            name: {value:"stop service"}
         },
         inputs:1,
         outputs:1,
         icon: "balena.svg",
         label: function() {
-            return this.name||"stop";
+            return this.name||"stop service";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="stop">
+<script type="text/x-red" data-template-name="stop_service>
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="stop">
+<script type="text/x-red" data-help-name="stop_service">
     <p>Stops the service with name specified by the payload of the incoming message. Returns "OK" when service is stopped.</p>
 </script>

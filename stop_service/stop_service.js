@@ -27,5 +27,5 @@ module.exports = function(RED) {
             });
         });
     }
-    RED.nodes.registerType("stop", stopService);
+    RED.nodes.registerType("stop_service", stopService);
 };
