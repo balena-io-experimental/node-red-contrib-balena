@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('start service',{
+        category: 'balena',
+        color: '#F3F3F3',
+        defaults: {
+            name: {value:"start service"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "balena.svg",
+        label: function() {
+            return this.name||"start service";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="start service>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="start service">
+    <p>Starts the service with name specified by the payload of the incoming message. Returns "OK" when service is started.</p>
+</script>
