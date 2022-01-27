@@ -23,8 +23,12 @@
   "node-red": {
     "nodes": {
       "blink": "blink/blink.js",
-      "device": "device/device.js",
       "ping": "ping/ping.js",
+      "device": "device/device.js",
+      "state_services" : "state_services/state_services.js",
+      "stop_service"   : "stop_service/stop_service.js",
+      "start_service"  : "start_service/start_service.js", 
+      "restart_service": "restart_service/restart_service.js",     
       "restart": "restart/restart.js",
       "reboot": "reboot/reboot.js",
       "shutdown": "shutdown/shutdown.js",
