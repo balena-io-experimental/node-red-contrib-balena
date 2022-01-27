@@ -1,7 +1,7 @@
 {
   "name": "node-red-contrib-balena",
   "version": "1.0.1",
-  "description": "A set of nodes to interact with balena.io supervisor from node-red",
+  "description": "A set of nodes to interact/control with balena.io supervisor from node-red",
   "repository": "https://github.com/balena-io-projects/node-red-contrib-balena",
   "dependencies": {
     "lockfile": "^1.0.4",
