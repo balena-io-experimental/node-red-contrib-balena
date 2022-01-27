@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-balena",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A set of nodes to interact/control with balena.io supervisor from node-red",
   "repository": "https://github.com/balena-io-projects/node-red-contrib-balena",
   "dependencies": {
@@ -33,5 +33,8 @@
       "unlock": "unlock/unlock.js",
       "update": "update/update.js"
     }
+  },
+  "versionist": {
+    "publishedAt": "2022-01-27T21:04:22.821Z"
   }
 }
