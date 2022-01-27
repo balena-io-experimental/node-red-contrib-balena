@@ -3,9 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.1.0 - 2022-01-27
 
-
-
+* Added repo.yml and tweaked changelog
+* Removed deprecated experimental depApp and depDevice nodes
+* Make it clear that the restart node restarts whole app
+* Make container restart a warning-level node
 
 ## 1.0.1 - 2019-09-13
 
